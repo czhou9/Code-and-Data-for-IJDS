@@ -1,0 +1,18 @@
+Use 'DataGeneration.m' to generate the complete 21*21*10*500 complete 4D tensor. The code for 'randomize the sequence' and 'generate missing entries'
+are also in 'DataGeneration.m' and hided at the last.
+
+
+Use 'TensorCompletion.m' to fill the missing entries for incomplete 4D tensor when verifying the two benchmarks 'MPCA', 'MPCA_CV'. 'Tmac' folder should
+be included during tensor completion.
+
+
+Use 'CV_benchmark.m', 'CV_proposed.m/CV_proposed_method2.m' to select the optimal parameter for 'MPCA_CV' and 'Proposed_CV', explanations in detail are
+in the code. When you can use cluster to run your code, you can change some 'for' to 'parfor' to save your time, exact place are labeled in the code.
+
+
+Use 'Benchmark_MPCA.m' to check 'MPCA', use 'Benchmark_MPCA_CV.m' to check 'MPCA_CV', use 'Proposed_CV.m' to check 'Proposed_CV', the output is the boxplot.
+
+
+For you convenience of checking the result, we attached the sample complete/incomplete 4D tensor and 4D tensor after tensor completion (in the data file).
+Because it will take some time for tensor completion process and generating different missing percentage. We also labeled the optimal parameter combination
+in the 'MPCA_CV.m' and 'Proposed_CV.m' for our attached data because it will also take some time for optimal parameter selection.
